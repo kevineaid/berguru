@@ -14,7 +14,7 @@
 }
 
 body {
-	font-family: 'AvenirNextLTPro', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .login-layout {
 	display: flex;
@@ -25,7 +25,9 @@ body {
 	width: 44.4%;
 	background: #123899;
 	padding-left: 170px;
+	padding-left: 11%;
 	padding-right: 40px;
+	padding-right: 2.7%;
 }
 .logo-header {
 	margin-top: 24px;
@@ -36,6 +38,8 @@ body {
 	width: 65.6%;
 	background: #fff;
 	padding-right: 170px;
+	padding-right: 11%;
+
 }
 .right-side-wrap .have-account > span{
 	font-family: AvenirNext, sans-serif;
@@ -57,6 +61,7 @@ body {
 	margin-right: 5px;
 }
 .login-box {
+	padding-left: 6.25%;
 	padding-left: 90px;
 	margin-bottom: 130px;
 	margin-top: 135px;
@@ -99,6 +104,7 @@ body {
 
 .right-side-wrap footer {
 	color: #000;
+	padding-left: 6.25%;
 	padding-left: 90px;
 }
 .right-side-wrap footer p {
@@ -136,7 +142,7 @@ body {
 }
 .front-slider {
 	position: absolute;
-	bottom: 100px;
+	bottom: 40px;
 
 }
 .front-slider .quote {
@@ -147,15 +153,19 @@ body {
 	margin-bottom: 40px;
   	line-height: 30px;
 	width: 365px;
+	width: 100%;
+	max-width: 365px;
   	color: #ffffff;
 }
 .front-slider .author {
 	font-size: 18px;
+	color: #fff;
   	font-weight: 600;
   	margin-bottom: 0;
 }
 .front-slider .author-pos {
-	font-size: 18px;
+	font-size: 16px;
+	color: #fff;
 }
 
 .front-slider .carousel-indicators {
@@ -202,6 +212,14 @@ body {
 }
 .profesi-box {
 	height: 300px;
+}
+.word-or {
+	position: absolute;
+	font-size: 16px;
+	color: #4a4a4a;
+	left: 55%;
+	top: 55%;
+	transform: translateY(-50%) translateX(-50%);
 }
 
 /* Hide the browser's default radio button */
