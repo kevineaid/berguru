@@ -22,6 +22,7 @@ body {
 	min-height: 100vh;
 }
 .left-side-wrap {
+	position: relative;
 	width: 44.4%;
 	background: #123899;
 	padding-left: 170px;
@@ -39,8 +40,11 @@ body {
 	background: #fff;
 	padding-right: 170px;
 	padding-right: 11%;
-
 }
+
+
+
+
 .right-side-wrap .have-account > span{
 	font-family: AvenirNext, sans-serif;
 	font-size: 12px;
@@ -62,7 +66,8 @@ body {
 }
 .login-box {
 	padding-left: 6.25%;
-	padding-left: 90px;
+	padding-left: 0px;
+	margin-left: 90px;
 	margin-bottom: 130px;
 	margin-top: 135px;
 }
@@ -143,17 +148,17 @@ body {
 .front-slider {
 	position: absolute;
 	bottom: 40px;
-
+	width: calc(100% - 220px);
 }
 .front-slider .quote {
 	font-weight: 300;
   	font-size: 18px;
-
   	font-style: italic;
 	margin-bottom: 40px;
   	line-height: 30px;
 	width: 365px;
 	width: 100%;
+	margin-right: 0;
 	max-width: 365px;
   	color: #ffffff;
 }
@@ -211,14 +216,15 @@ body {
 	margin-left: auto;
 }
 .profesi-box {
+	position: relative;
 	height: 300px;
 }
 .word-or {
 	position: absolute;
 	font-size: 16px;
 	color: #4a4a4a;
-	left: 55%;
-	top: 55%;
+	left: 50%;
+	top: 35%;
 	transform: translateY(-50%) translateX(-50%);
 }
 
@@ -242,9 +248,13 @@ body {
     padding-top: 40px;
     border: solid 1px #c5c5c5;
 }
+.checkmark img {
+	width: 50px;
+}
 .checkmark p {
 	font-size: 16px;
 	color: #123899;
+	color: #4a4a4a;
 	margin-top: 17px;
 }
 .check-icon {
@@ -276,6 +286,12 @@ body {
     display: block;
 }
 
+.container-radio input:checked ~ .checkmark p {
+	font-size: 16px;
+	color: #123899;
+	margin-top: 17px;
+}
+
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
     content: "";
@@ -296,4 +312,115 @@ body {
 	height: 8px;
 	border-radius: 50%;
 	background: white;
+}
+
+
+
+
+/* @media 1200 */
+@media screen and (max-width: 1200px){
+	.left-side-wrap {
+		padding-left: 40px;
+	}
+	.right-side-wrap {
+		padding-right: 40px;
+	}
+	.front-slider {
+		width: calc(100% - 70px);
+	}
+	.front-slider .carousel-indicators {
+		right: 0px;
+	}
+	.register-box {
+		margin-left: 20px;
+	}
+	.right-side-wrap footer{
+		padding-left: 20px;
+	}
+	/* .checkmark {
+		padding-top: 20px;
+		height: 150px;
+		width: 170px;
+	} */
+	/* .word-or {
+		top: 25%;
+		left: 46%;
+	} */
+
+}
+
+@media screen and (max-width: 991.8px){
+	.right-side-wrap footer p {
+		text-align: left;
+	}
+	.checkmark {
+		height: 150px;
+		padding-top: 20px;
+		width: 170px;
+	}
+	.check-icon {
+		right: 60px;
+    	top: 20px;
+	}
+	.word-or {
+		top: 25%;
+		left: 45%;
+	}
+	.btn-regis {
+		margin-top: 170px;
+	}
+}
+
+@media screen and (max-width: 767.8px){
+	.left-side-wrap {
+		display: none;
+	}
+	.right-side-wrap {
+		width: 100%;
+	}
+	.login-box {
+		margin-left: 0;
+		padding-left: 30px;
+		margin-bottom: 20px;
+	}
+	.checkmark {
+		height: 150px;
+		padding-top: 20px;
+		width: 170px;
+	}
+}
+
+@media screen and (max-width: 540px){
+	.login-box {
+		margin-left: 0;
+		padding-left: 30px;
+		margin-bottom: 20px;
+	}
+	.checkmark {
+		height: 150px;
+		padding-top: 20px;
+		width: 170px;
+	}
+	.profesi-box {
+		height: 400px;
+	}
+	.container-radio{
+		
+		left: 55%;
+		margin-left: 0;
+		transform: translateX(-50%);
+	}
+	.container-radio.student{
+		top: 200px;
+	}
+	.word-or {
+		top: 45%;
+		left: 50%;
+	}
+	.btn-regis {
+		margin-top: 360px;
+	}
+	.register-box {
+		margin-bottom: 70px;
+	}
 }
